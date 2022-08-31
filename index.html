@@ -13,18 +13,27 @@
     }
     html, body {
       background-color: #0b1ad5;
-      min-width: 100vh;
-      min-height: 100vh;
+      min-width: 100%;
+      min-height: 100%;
     }
-    .app {
-      min-width: 100vh;
+    #app {
+      width: 100%;
       display: flex;
       justify-content: center;
+    }
+    img {
+      max-width: 88%;
+    }
+    @media only screen and (max-width: 768px) {
+      #app {
+        margin: 0 auto;
+        max-width: 80%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="app">
+  <div id="app">
     <img src="/images/Logo-15-06-2019.jpg" alt="">
   </div>
 </body>
